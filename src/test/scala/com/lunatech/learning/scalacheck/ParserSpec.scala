@@ -11,7 +11,7 @@ class ParserSpec extends FunSuite with Matchers {
 
     val input2 = "Maria"
     //Exception has to be handled
-    intercept[java.lang.NumberFormatException] {
+    intercept[java.lang.IllegalArgumentException] {
       Parser.parseStringToSeq(input2)
     }
 
